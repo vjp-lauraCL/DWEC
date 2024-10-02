@@ -16,3 +16,21 @@ for(let i = 0; i < document.head.parentNode.length; i++){
 //nextSibling: devuelve el siguiente hermano 
 
 //previousSibling: 
+
+
+//createElement:
+let btn = document.createElement("button");
+    btn.innerHTML=  "PULSAME";
+    document.body.appendChild(btn);
+
+let parrafo = document.createElement("p");
+parrafo.innerHTML = "Hola mundo";
+document.body.appendChild(parrafo);
+
+//createTextNode
+let parrafo2 = document.createTextNode("Mi hermana vivie en Málaga");
+document.body.appendChild(parrafo2);
+
+
+
+
