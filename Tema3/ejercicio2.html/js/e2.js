@@ -10,5 +10,5 @@ console.log(enlaceUno.title);
 // let enlaceCuatro = document.querySelector(".linkNormal:nth-child(2)" );
 // console.log(enlaceCuatro);
 
-let enlaceCinco = document.querySelector(".linkNormal[title^=Spider]" );
-console.log(enlaceCinco);
+let enlaceCinco = document.querySelector(".linkNormal[title^=Spider]");
+console.log(enlaceCinco.innerHTML);
