@@ -8,6 +8,7 @@ idNuevo.textContent = 'Twitter';//cambia el texto de nuestro html
 
     if(idNuevo.hasAttribute('title')){//comprueba si tiene el atributo title
     idNuevo.setAttribute('title', 'Ir a Twitter');
+    //idNuevo.title = "Ir a Twitter";
 
     }
 
