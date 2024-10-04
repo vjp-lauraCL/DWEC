@@ -1,19 +1,17 @@
+function cambiarATwitter(){
+let idNuevo = document.querySelector('.linkNormal');
+    if(idNuevo){
+    idNuevo.id = "aTwitter";//cambiar el id de nuestro html
+idNuevo.href = "https://www.twitter.com";//cambiar el enlace de nuestro html
 
-//1
-let uno = document.getElementsByTagName("a");
-for(let i = 0; i< uno.length; i++){
-    console.log(uno[i].textContent);
+idNuevo.textContent = 'Twitter';//cambia el texto de nuestro html
+
+    if(idNuevo.hasAttribute('title')){//comprueba si tiene el atributo title
+    idNuevo.setAttribute('title', 'Ir a Twitter');
+
     }
 
-//2
-function cambiarATwitter(){
-let twitter = document.createElement("a");
-twitter.id="twitter";
-
-document.body.appendChild(twitter);
+    }
 }
 
 cambiarATwitter();
-
-
-//3
