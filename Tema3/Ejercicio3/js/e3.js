@@ -5,11 +5,15 @@ for(let i = 0; i< uno.length; i++){
     console.log(uno[i].textContent);
     }
 
-
+//2
 function cambiarATwitter(){
-let twitter = document.querySelector('#twitter');
+let twitter = document.createElement("a");
+twitter.id="twitter";
+
+document.body.appendChild(twitter);
 }
 
 cambiarATwitter();
 
 
+//3
