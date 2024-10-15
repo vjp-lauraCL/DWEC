@@ -1,45 +1,20 @@
-// Función para validar DNI
-function validarDni() {
-    var dni = document.getElementByName("dni").value;
-    var regexDni = /^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]$/i;
-    if (regexDni.test(dni)) {
-        var numero = dni.substring(0, 8);
-        var letra = dni.substring(8, 9).toUpperCase();
-        var letras = "TRWAGMYFPDXBNJZSQVHLCKE";
-        if (letras.charAt(parseInt(numero, 10) % 23) === letra) {
-            alert("DNI válido");
-        } else {
-            alert("DNI no válido");
-        }
-    } else {
-        alert("Formato de DNI no válido");
-    }
+function validarDNI(){
+    let input = document.getElementById("dni").value;
+    let dniRegex = /^[0-9]{8}[A-Z]$/;
+    let resultado = dniRegex.test(input) ? "Es un DNI válido." : "Es un DNI válido.";
+    alert(resultado);
 }
 
-// Función para validar fecha
 function validarFecha() {
-    var fecha = document.getElementByName("fecha").value;
-    var regexFecha = /^\d{4}-\d{2}-\d{2}$/;
-    if (regexFecha.test(fecha)) {
-        var fechaActual = new Date();
-        var fechaIntroducida = new Date(fecha);
-        if (fechaActual.getTime() > fechaIntroducida.getTime()) {
-            alert("Fecha válida");
-        } else {
-            alert("Fecha no válida");
-        }
-    } else {
-        alert("Formato de fecha no válido");
-    }
+    let input = document.getElementById('dni').value;
+    let fechaRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/;
+    let resultado = fechaRegex.test(input) ? "Es una fecha válida." : "Es una fecha válida.";
+   alert(resultado);
 }
 
-// Función para validar identificador
 function validarIdentificador() {
-    var identificador = document.getElementByName("identificador").value;
-    var regexIdentificador = /^[a-zA-Z0-9]{9}$/;
-    if (regexIdentificador.test(identificador)) {
-        alert("Identificador válido");
-    } else {
-        alert("Identificador no válido");
-    }
+    let input = document.getElementById('dni').value;
+    let identificadorRegex = /^[a-z_][a-zA-Z0-9_]*$/;
+    let resultado = identificadorRegex.test(input) ? "Es un identificador válido." : "Es un identificador válido.";
+   alert(resultado);
 }
