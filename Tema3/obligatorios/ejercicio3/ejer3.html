@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Restaurantes FoodScore</h1>
+    <form action="#" id="newPlace" novalidate>
+        <label for="nombre">Nombre del restaurante:</label><br>
+        <input type="text" id="nombre" name="nombre" pattern="^[A-Za-z][A-Za-z\s]*$" required >
+        <div class="invalid-feedback">El campo nombre es obligatorio y solo puede tener letras y espacios</div>
+        <br>
+        <label for="descripcion">Descripción: </label><br>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10" pattern="^[A-Za-z]*[A-Za-z\s]+$" required></textarea>
+        <div class="invalid-feedback">El campo descripción es obligatorio </div>
+        <br>
+        <label for="cocina">Cocina:</label><br>
+        <input type="text" name="cocina"pattern="^[A-Za-z]*[A-Za-z\s]+$" required>
+        <div class="invalid-feedback">El campo cocina es obligatorio</div>
+        <br>
+        <label for="dias">Días de Apertura</label><br>
+        <input type="checkbox" name="dias" required>
+        <label for="lunes">Lunes</label>
+        <input type="checkbox" name="dias" required>
+        <label for="martes">Martes</label>
+        <input type="checkbox" name="dias" required>
+        <label for="miercoles">Miércoles</label>
+        <input type="checkbox" name="dias" required>
+        <label for="jueves">Jueves</label>
+        <input type="checkbox" name="dias" required>
+        <label for="viernes">Viernes</label>
+        <input type="checkbox" name="dias" required>
+        <label for="sabado">Sábado</label>
+        <input type="checkbox" name="dias" required>
+        <label for="domingo">Domingo</label>
+        <div class="invalid-feedback">Debe marcar al menos un día de la semana</div>
+        <br>
+        <label for="telefono">Número de teléfono: </label><br>
+        <input type="tel" name="telefono" pattern="^[0-9]{9}$" required>
+        <div class="invalid-feedback">El campo teléfono es obligatorio y debe tener 9 dígitos</div>
+        <br>
+        <label for="imagen">Imagen del restaurante: </label>
+        <input type="file" name="imagen" required>
+        <div class="invalid-feedback">El campo imagen es obligatorio</div>
+        <br>
+        <input type="submit" value="Añadir">
+    </form>
+    
+</body>
+</html>

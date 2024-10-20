@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumpleaños</title>
+    <style>
+        body{
+            background-color: rgb(183, 183, 240);
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            margin: 0 auto;
+            width: 50%;
+            background-color: rgb(130, 205, 235);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .boton{
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color:rgb(9, 75, 101);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #listaCumpleanos {
+            margin: 20px auto;
+            width: 50%;
+            background-color: rgb(151, 147, 147);
+            padding: 20px;
+            border-radius: 10px;
+            list-style: none;
+        }
+        #listaCumpleanos li {
+            margin-bottom: 10px;
+
+        }
+        #listaCumpleanos img {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Cumpleaños!</h1>
+    <form id="birthdayForm">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" pattern="^[A-Za-z][A-Za-z\s]*$" required><br>
+        <label for="dia">Dia:</label><br>
+        <input type="number" id="dia" name="dia" min="1" max="31" required><br>
+        <label for="mes">Mes:</label><br>
+        <input type="number" id="mes" name="mes" min="1" max="12" required><br>
+        <label for="año">Año:</label><br>
+        <input type="number" id="año" name="año" min="1" required><br>
+        <input class="boton" type="submit" value="Enviar">
+    </form>
+    <ul id="listaCumpleanos"></ul>
+
+    <script src="ejer4.js"></script>
+</body>
+</html>
