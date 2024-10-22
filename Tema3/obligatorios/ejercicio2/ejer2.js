@@ -16,9 +16,10 @@ formNota.addEventListener("submit", function(event) {
         li.textContent = nota;
         li.classList.add("nota");
 
-        // Añadimos funcionalidad al evento del li
+        // Añadimos funcionalidad al evento del li. Si pulsamos alt + click la nota se pone roja, sino solo pulsamos sobre la nota, esta se elimina. 
         li.addEventListener("click", function(event) {
             if (event.altKey) {
+                //toggle comprueba si "rojo" esta siendo usada, si el caso de que no sea usada, hace que se ponga en rojo, sino lo elimina.
                 li.classList.toggle("rojo");
             } else {
                 li.remove();
