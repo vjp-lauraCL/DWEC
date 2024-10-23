@@ -12,7 +12,7 @@ formNota.addEventListener("submit", function(event) {
     // Comprobamos que el texto no está vacío
     if (nota) {
         // Creamos el elemento li
-        var li = document.createElement("li");
+        let li = document.createElement("li");
         li.textContent = nota;
         li.classList.add("nota");
 
